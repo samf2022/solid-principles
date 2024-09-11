@@ -2,8 +2,9 @@
 require_once __DIR__.'/../../vendor/autoload.php';
 
 use App\Ocp\AreaCalculator;
-use App\Ocp\Circle;
-use App\Ocp\Square;
+use App\Ocp\Shapes\Circle;
+use App\Ocp\Shapes\Square;
+
 
 $square = new Square(10);
 $circel = new Circle(5);

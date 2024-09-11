@@ -1,5 +1,5 @@
 <?php
-namespace App\Ocp;
+namespace App\Ocp\Shapes;
 
 interface ShapeInterface
 {

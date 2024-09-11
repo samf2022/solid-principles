@@ -1,6 +1,6 @@
 <?php
-namespace App\Ocp;
-use App\Ocp\ShapeInterface;
+namespace App\Ocp\Shapes;
+use App\Ocp\Shapes\ShapeInterface;
 class Circle implements ShapeInterface
 {
     private $radius;
