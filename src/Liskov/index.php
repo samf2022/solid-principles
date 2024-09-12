@@ -1,13 +1,18 @@
 <?php
 
+use App\Liskov\AnimalInterface;
 use App\Liskov\Animals\Cat;
 use App\Liskov\Animals\Dog;
-use App\Liskov\AnimalSound;
 
 require_once __DIR__.'/../../vendor/autoload.php';
 
+function animalSound(AnimalInterface $animal) {
+    echo $animal->makeSound();
+}
+
 $dog = new Dog();
 $cat = new Cat();
-$makeSound = new AnimalSound($dog);
+
+animalSound($dog); // Output: Woof!
 echo "<br>";
-$makeSound = new AnimalSound($cat);
+animalSound($cat); // Output: Meow!
